@@ -1,0 +1,35 @@
+POST http://localhost:5000/api/v1/note/123
+content-type: application/json
+
+{
+    "title": "My note",
+    "content": "blah blah blah"
+}
+
+###
+
+POST https://xtvme0xhfi.execute-api.us-east-2.amazonaws.com/dev/api/v1/notes
+content-type: application/json
+
+{
+    "title": "My note",
+    "content": "blah blah blah FROM THE CLOUD!"
+}
+
+###
+
+GET http://localhost:3001/api/v1/notes
+
+###
+
+
+PATCH http://localhost:3001/api/v1/notes/60c9897a12161518a54871c7
+content-type: application/json
+
+{
+    "content": "hello"
+}
+
+###
+
+DELETE http://localhost:3001/api/v1/notes/60c9897a12161518a54871c7
