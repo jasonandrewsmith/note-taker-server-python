@@ -1,35 +1,24 @@
-POST http://localhost:5000/api/v1/note/123
+POST https://e6ttla0udc.execute-api.us-east-1.amazonaws.com/test/notetaker/api/notes
 content-type: application/json
 
 {
-    "title": "My note",
-    "content": "blah blah blah"
+    "title": "My note Python",
+    "content": "Python Python Python"
 }
 
 ###
 
-POST https://xtvme0xhfi.execute-api.us-east-2.amazonaws.com/dev/api/v1/notes
+GET https://e6ttla0udc.execute-api.us-east-1.amazonaws.com/test/notetaker/api/notes
+
+###
+
+PATCH https://e6ttla0udc.execute-api.us-east-1.amazonaws.com/test/notetaker/api/notes/60cc8f64269c170007f29150
 content-type: application/json
 
 {
-    "title": "My note",
-    "content": "blah blah blah FROM THE CLOUD!"
+    "title": "Python2 !!!"
 }
 
 ###
 
-GET http://localhost:3001/api/v1/notes
-
-###
-
-
-PATCH http://localhost:3001/api/v1/notes/60c9897a12161518a54871c7
-content-type: application/json
-
-{
-    "content": "hello"
-}
-
-###
-
-DELETE http://localhost:3001/api/v1/notes/60c9897a12161518a54871c7
+DELETE https://e6ttla0udc.execute-api.us-east-1.amazonaws.com/test/notetaker/api/notes/60cc8f64269c170007f29150
